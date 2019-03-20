@@ -10,10 +10,10 @@ describe 'navigate' do
     #expect(page).to have_css("h1", text: "My Post")
   #end
 
-  it 'to post pages' do
-    visit "/posts/#{@post.id}"
-    expect(page.status_code).to eq(200)
-  end
+  #it 'to post pages' do
+   # visit "/posts/#{@post.id}"
+   # expect(page.status_code).to eq(200)
+  #end
 
   it 'shows the description on the show page in a p tag' do
     visit "/posts/#{@post.id}"
