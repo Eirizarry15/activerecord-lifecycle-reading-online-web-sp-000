@@ -5,10 +5,10 @@ describe 'navigate' do
     @post = Post.create(title: "My Post", description: "My post desc")
   end
 
-  it '' do
-    visit "/posts/#{@post.id}"
-    expect(page).to have_css("h1", text: "My Post")
-  end
+  #it '' do
+   # visit "/posts/#{@post.id}"
+    #expect(page).to have_css("h1", text: "My Post")
+  #end
 
   it 'to post pages' do
     visit "/posts/#{@post.id}"
